@@ -197,16 +197,6 @@ Policy enforcement can affect applications. Enable cloned policies gradually, es
 
 ## Troubleshooting
 
-### `/usr/bin/curl: Argument list too long`
-
-This version avoids that issue by writing large JSON payloads to temporary files and using:
-
-```bash
---data-binary @file.json
-```
-
-instead of passing the JSON directly as a command-line argument.
-
 ### The script says no policies need cloning
 
 This usually means one of the following:
